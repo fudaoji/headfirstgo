@@ -29,3 +29,16 @@ func (t *TapeRecoder) Record() {
 func (t *TapeRecoder) Stop() {
 	fmt.Println("Stoped!")
 }
+
+func playList(device *TapePlayer, songs []string) {
+	for _, song := range songs {
+		device.Play(song)
+	}
+	device.Stop()
+}
+
+func TestGadget() {
+	songs := []string{"Yesterday once more", "Take me to your heart"}
+	player := TapePlayer{}
+	playList(&player, songs)
+}
