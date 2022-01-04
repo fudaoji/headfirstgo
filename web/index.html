@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>Message board</title>
+    </head>
+    
+    <body>
+        <h2>Message board</h2>
+        <div style="width: 200px;text-align: right;">
+            <a href="/new">新增</a>
+        </div>
+        <div>
+            {{range .List}}
+            <div>
+                {{.}}
+            </div>
+            {{end}}
+        </div>
+        <div>共{{.Total}}条</div>
+    </body>
+</html>

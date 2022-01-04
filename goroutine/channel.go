@@ -22,7 +22,7 @@ func send(myChan chan string) {
 	myChan <- "b"
 }
 
-func TestChannel() {
+func Test1() {
 	myChan := make(chan string, 1)
 	go send(myChan)
 	reportNap("receive goroutine", 5)
@@ -30,4 +30,24 @@ func TestChannel() {
 	log.Println("======sending value=======")
 	log.Println("======sending value=======")
 	log.Println(<-myChan)
+}
+
+func greeting(myChannel chan string) {
+	myChannel <- "hi"
+	myChannel <- " from greeting"
+}
+
+func Test2() {
+	myChannel := make(chan string)
+	go greeting(myChannel)
+	//myChannel <- "hi from main"
+	/* for {
+		if data, ok := <-myChannel; ok {
+			println(data)
+		} else {
+			break
+		}
+	} */
+	println(<-myChannel)
+	println(<-myChannel)
 }
