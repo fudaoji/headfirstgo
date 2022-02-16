@@ -22,13 +22,15 @@ func visit(links []string, n *html.Node) []string {
 	return links
 }
 
-func Demo1() {
+func DemoFindlinks1() {
 	doc, err := html.Parse(os.Stdin)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "findlinks1: %v", err)
 	}
 
-	for _, link := range visit(nil, doc) {
+	links := visit(nil, doc)
+	fmt.Printf("len: %d\n", len(links))
+	for _, link := range links {
 		fmt.Println(link)
 	}
 }
