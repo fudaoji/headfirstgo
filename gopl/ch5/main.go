@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/fudaoji/learn-go/gopl/ch5/section4"
+	"github.com/fudaoji/learn-go/gopl/ch5/section8"
 )
 
 func main() {
-	section4.Demo1()
+	section8.DemoTrace()
 }
