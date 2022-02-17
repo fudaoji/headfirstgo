@@ -1,8 +1,7 @@
 package main
 
 import (
-	//"github.com/fudaoji/gopl/ch1/section3"
-	"github.com/fudaoji/gopl/ch1/section5"
+	"github.com/fudaoji/learn-go/gopl/ch1/section5"
 )
 
 func main() {

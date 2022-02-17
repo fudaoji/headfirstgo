@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	section8.DemoTrace()
+	section8.DemoFetch()
 }
