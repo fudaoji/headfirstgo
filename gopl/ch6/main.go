@@ -1,7 +1,9 @@
 package main
 
-import "github.com/fudaoji/learn-go/gopl/ch6/section1"
+import (
+	"github.com/fudaoji/learn-go/gopl/ch6/section4"
+)
 
 func main() {
-	section1.DemoScaleBy()
+	section4.DemoScaleBy()
 }
