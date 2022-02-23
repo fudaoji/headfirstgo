@@ -113,6 +113,7 @@ func Demo2() {
 func Demo() {
 	counts := make(map[string]int)
 	scanner := bufio.NewScanner(os.Stdin)
+
 	for scanner.Scan() {
 		counts[scanner.Text()]++
 	}
