@@ -1,0 +1,9 @@
+<html>
+<h2>商品橱窗</h2>
+	<table>
+	<tr><th>商品</th><th>价格</th></tr>
+	{{range $name,$price := .List}}
+	<tr><td>{{$name}}</td><td>{{$price}}</td></tr>
+	{{end}}
+	</table>
+    </html>
