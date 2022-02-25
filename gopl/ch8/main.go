@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/fudaoji/learn-go/gopl/ch8/section2"
+	"github.com/fudaoji/learn-go/gopl/ch8/section4"
 )
 
 func main() {
-	section2.DemoClock()
+	section4.DemoChan()
 }
